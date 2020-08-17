@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juan Marin</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/styles.css' %}">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="test">
+          <div id="title">
+            <h2>Juan Marin</h2>
+          </div>
+          <div id="buttons">
+            <div class="check">
+              <form class="form" action="" method="post">
+                {% csrf_token %}
+                <input class="menu_bar_options" type="submit" value="Home">
+              </form>
+              <form class="form" action="" method="post">
+                {% csrf_token %}
+                <input class="menu_bar_options" type="submit" value="Portfolio">
+              </form>
+              <form class="form" action="" method="post">
+                {% csrf_token %}
+                <input class="menu_bar_options" type="submit" value="Contact">
+              </form>
+              <form class="form" action="" method="post">
+                {% csrf_token %}
+                <input class="menu_bar_options" type="submit" value="My Skills">
+              </form>
+              <form class="form" action="" method="post">
+                {% csrf_token %}
+                <input class="menu_bar_options" type="submit" value="Resume">
+              </form>
+              <form class="form" action="" method="post">
+                {% csrf_token %}
+                <input class="menu_bar_options" type="submit" value="About">
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
